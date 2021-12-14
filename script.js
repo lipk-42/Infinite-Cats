@@ -22,6 +22,7 @@ function checkLoad() {
         initialLoad = false;
         console.log(count);
         count = 30;
+        apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
         console.log("check");
     }
 }
