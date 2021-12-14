@@ -9,10 +9,10 @@ let initialLoad = true;
 
 // Unsplash API 
 const initialCount = 5;
-let count = initialCount;
+let count = 30;
 const apiKey = '3I3W4XAKOuIuejYB9n1UrPNmhks0tz8hFm6A7Jv4Bwc';
 const query = 'cats';
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${initialCount}&query=${query}`;
 
 
 // helper function : check if 1st load
@@ -20,12 +20,10 @@ let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=
 function checkLoad() {
     if (imagesLoaded >= initialCount) {
         initialLoad = false;
-        console.log(count);
-        count = 30;
-        apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
-        console.log("check");
+        apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`
     }
 }
+
 // helper function check if all imgs were loaded
 function imageLoaded() {
     imagesLoaded++;
