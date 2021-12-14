@@ -8,7 +8,7 @@ let photosArray = [];
 let initialLoad = true;
 
 // Unsplash API 
-const initialCount = 5;
+let initialCount = 5;
 let count = initialCount;
 const apiKey = '3I3W4XAKOuIuejYB9n1UrPNmhks0tz8hFm6A7Jv4Bwc';
 const query = 'cats';
