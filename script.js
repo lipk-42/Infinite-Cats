@@ -8,11 +8,11 @@ let photosArray = [];
 let initialLoad = true;
 
 // Unsplash API 
-let initialCount = 5;
+const initialCount = 5;
 let count = initialCount;
 const apiKey = '3I3W4XAKOuIuejYB9n1UrPNmhks0tz8hFm6A7Jv4Bwc';
 const query = 'cats';
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
 
 
 // helper function : check if 1st load
